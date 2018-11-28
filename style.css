@@ -1,0 +1,95 @@
+/*Reset CSS*/
+html {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+	padding: 0; margin: 0;
+}
+html,body{
+	display: block;
+	height: 100%; width: 100%;
+}
+ul,li,a {
+	margin: 0; padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+	.container {
+		display: grid;
+		grid-template-columns: 6fr 6fr;
+		margin-left: 15px;
+	}
+	.list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 30px;
+		padding: 0 30px;
+	}
+	.map {
+		position: sticky!important;
+	}
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 4fr 4fr 3fr;
+	margin: 1rem 2rem 1rem 1.2rem;
+}
+
+nav h1 {
+	color: #7C858C;
+	text-transform: uppercase;
+	font-size: 1em;
+	text-align: left;
+	padding-top: 7px;
+	font-weight: bold;
+}
+
+#logo {width: 100px}
+
+input {
+	border-radius: 200px;
+	padding-left: 5px;
+}
+
+.map { 
+	top: 0;
+	right: 10px;
+	left: 20px;
+	height: 100vh; 
+}
+
+.item {
+	cursor: pointer;
+	margin-bottom: 2rem;
+	transition: box-shadow .3s;
+	padding: 0 20px 20px;
+}
+
+.item:hover {
+	box-shadow: 0 0 10px rgba(0,0,0, .1);
+	background-color: #fff;
+}
+
+.item h4 {
+	margin: 1rem 0 0.5rem 0;
+	font-size: 1.5rem;
+}
+
+.item p {
+	margin: 0 0 1rem 0;
+}
+
+.item .year {
+	font-weight: bold;
+}
+
+.item img {
+	width: calc(100% + 40px);
+	margin-left: -20px;
+	display: block;
+}
