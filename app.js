@@ -18,7 +18,7 @@ var smallYacht = L.icon({
 // get the input from search bar and assign function
 var result = "";
 document.getElementById("input").onchange = function(e) {
-	result = e.target.value;
+	result = e.target.value.toLowerCase();
 	// console.log(result);
 	getJson();
 }
@@ -82,7 +82,7 @@ function getJson() {
 				 + myData[i].year + "<br>" + myData[i].length
 			);
 			marker.on('click', function(e){
-			    map.setView(e.latlng, 13);
+			    map.setView(e.latlng, 7);
 			});
 
 			// to link yachts and map - link to function below
@@ -98,5 +98,5 @@ getJson();
 
 // to link markers and yachts
 function linkYachts(input1, input2) {
-	map.setView([input1, input2], 13);
+	map.setView([input1, input2], 7);
 } 

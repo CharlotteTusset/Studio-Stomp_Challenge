@@ -17,7 +17,7 @@ ul,li,a {
 	text-decoration: none;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
 	.container {
 		display: grid;
 		grid-template-columns: 6fr 6fr;
@@ -31,6 +31,7 @@ ul,li,a {
 	}
 	.map {
 		position: sticky!important;
+		max-width: 100%;
 	}
 }
 
@@ -60,7 +61,7 @@ input {
 	top: 0;
 	right: 10px;
 	left: 20px;
-	height: 100vh; 
+	height: 85vh; 
 }
 
 .item {
